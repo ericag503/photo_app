@@ -7,4 +7,5 @@ get 'logout', to: 'sessions#destroy', as: 'logout'
 
   resources :accounts, :expect => [:index]
   resources :sessions, :execpt => [:index]
+  resources :photos
 end

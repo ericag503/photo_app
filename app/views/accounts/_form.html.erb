@@ -24,3 +24,7 @@
   </div>
   <div class="actions"><%= f.submit "Sign Up" %></div>
 <% end %>
+
+<%= form_for @account, :url => accounts_path, :html => { :multipart => true } do |form| %>
+  <%= form.file_field :avatar %>
+<% end %>
