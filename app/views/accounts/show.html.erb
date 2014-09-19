@@ -1,0 +1,14 @@
+<h1><%= @account.username %></h1>
+
+<ul>
+  <% @accounts.each do |account| %>
+  <li><a href="accounts/<%= account.id %>"><%= account.username %></a></li>
+  <% end %>
+</ul>
+
+<ul>
+  <h3> Created at: </h3>
+  <% @accounts.each do |account| %>
+    <%= account.created_at %>
+  <% end %>
+</ul>
