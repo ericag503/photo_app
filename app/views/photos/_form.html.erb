@@ -1,0 +1,12 @@
+
+<form class="form-inline" role="form">
+<%= form_for(@photo) do |f| %>
+  <div class='form-group'>
+    <%= f.label :photo %>
+    <%= f.file_field :avatar %>
+  </div>
+
+  <%= f.hidden_field :account_id, value: current_account.id %>
+  <%= f.submit  class: "btn btn-success" %>
+<% end %>
+</form>

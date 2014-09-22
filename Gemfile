@@ -12,7 +12,7 @@ gem 'autoprefixer-rails'
 gem 'capybara'
 gem 'jbuilder', '~>2.0'
 gem 'bcrypt', '~> 3.1.7'
-gem 'paperclip', '~> 4.2'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 
 group :development do

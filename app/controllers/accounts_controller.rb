@@ -4,9 +4,15 @@ class AccountsController < ApplicationController
     @account = Account.new
   end
 
+  def index
+    @accounts = Account.all
+  end
+
   def show
     @account = Account.find(params[:id])
     @accounts = Account.all
+    @photo = Photo.new
+
   end
 
   def create

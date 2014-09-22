@@ -1,5 +1,8 @@
-<h1> Photos </h1>
+<h1><%= current_account.username %></h1>
+<h4> Photos: </h4>
 
-<% @account.each do |account| %>
-  <h4><%= @account.name %></h4>
 
+<h2> Add a new photo </h2>
+
+
+<%= render 'form' %>
